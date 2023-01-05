@@ -25,6 +25,8 @@ public class Main {
         h.setCoutJitel(3);
         h.Jiteli();
         System.out.println(h);
+        h.showInfo();
+        h.showYear();
 
 
         Police p = new Police();

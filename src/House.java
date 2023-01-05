@@ -1,4 +1,4 @@
-public class House extends Building {
+public class House extends Building implements LivingHouse {
     String vladelec;
     int countJitel;
 
@@ -46,5 +46,15 @@ public class House extends Building {
 
     public String toString() {
         return this.name + " \n" + this.year + " \n" + this.adres + " \n" + this.avtor + "\n\n\n";
+    }
+
+    @Override
+    public void showInfo() {
+        System.out.println("Infa po domu");
+    }
+
+    @Override
+    public void showYear() {
+        System.out.println("pokaz goda " + year);
     }
 }
